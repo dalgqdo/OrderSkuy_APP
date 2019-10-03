@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/wallregister"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="250dp"
+                                                  android:layout_height="250dp"
+                                                  android:layout_gravity="center"
+                                                  android:layout_marginTop="55dp"
+                                                  android:background="@drawable/logoblack"
+    />
+    <EditText android:layout_width="300dp"
+              android:layout_height="50dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="40dp"
+              android:hint="username"
+              android:textAlignment="center"
+              android:inputType="text"
+              android:id="@+id/etUsername"
+              android:background="@drawable/rounded_white"
+    />
+    <EditText android:layout_width="300dp"
+              android:layout_height="50dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="20dp"
+              android:hint="email"
+              android:id="@+id/etEmail"
+              android:textAlignment="center"
+              android:inputType="textEmailAddress"
+              android:background="@drawable/rounded_white"
+    />
+    <EditText android:layout_width="300dp"
+              android:layout_height="50dp"
+              android:layout_gravity="center"
+              android:layout_marginTop="20dp"
+              android:hint="pasword"
+              android:id="@+id/etPassword"
+              android:textAlignment="center"
+              android:inputType="textPassword"
+              android:background="@drawable/rounded_white"
+    />
+    <Button android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:textColor="#fff"
+            android:background="@drawable/drawable_solid"
+    />
+
+</LinearLayout>
