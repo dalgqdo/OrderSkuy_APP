@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.orderskuy.EditAccount
+import com.example.orderskuy.History
 import com.example.orderskuy.Login
 import com.example.orderskuy.R
 import com.example.orderskuy.data.Pref
@@ -49,8 +50,14 @@ class ProfileFragment : Fragment() {
         lyt_edit_profile.setOnClickListener {
             startActivity(Intent(activity!!, EditAccount::class.java))
         }
+
+        history.setOnClickListener {
+            startActivity(Intent(activity!!, History::class.java))
+        }
+
         fAuth = FirebaseAuth.getInstance()
         lyt_logout.setOnClickListener {
+            pref.setStatus(false)
             fAuth.signOut()
             val intent = Intent(context, Login::class.java)
             startActivity(intent)

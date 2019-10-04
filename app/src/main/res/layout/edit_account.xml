@@ -63,7 +63,7 @@
 
             <EditText
                     android:id="@+id/et_edit_email"
-                    android:text="famagung@gmail.com"
+                    android:text="test@gmail.com"
                     android:textSize="12sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_green_light"
+            android:background="@color/colorPrimary"
             android:gravity="center"
             android:orientation="vertical"
             android:layout_alignParentBottom="true">

@@ -26,8 +26,19 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
+        if (!pref.cekStatus()!!) {
+        } else {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+        if (fAuth.currentUser != null) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        } else {
+        }
+
         tvRegister.setOnClickListener {
-            startActivity(Intent(this@Login, Register::class.java))
+            startActivity(Intent(this, Register::class.java))
         }
 
         btnLogin.setOnClickListener {
