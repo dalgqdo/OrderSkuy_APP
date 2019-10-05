@@ -173,7 +173,12 @@
                     android:id="@+id/imgPayment"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginBottom="20dp" android:layout_marginTop="30dp"
+                    android:layout_marginTop="30dp"
+            />
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:text="*500/seat"
+                      android:layout_below="@+id/imgPayment"
+                      android:textAlignment="center"
             />
         </RelativeLayout>
     </ScrollView>
