@@ -10,28 +10,14 @@
                   android:layout_gravity="top"
                   android:orientation="horizontal"
     >
-        <TextView android:layout_width="350dp"
+        <TextView android:layout_width="match_parent"
                   android:layout_height="match_parent"
-                  android:text="            BOOKING"
+                  android:text="BOOKING"
                   android:textAlignment="center"
                   android:paddingTop="13dp"
                   android:textColor="#fff"
                   android:textStyle="bold"
                   android:textSize="20sp"
-
-        />
-        <TextView
-                android:id="@+id/tvBack"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="X"
-                android:textAlignment="center"
-                android:paddingTop="13dp"
-                android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="20sp"
-
-
         />
 
     </LinearLayout>
